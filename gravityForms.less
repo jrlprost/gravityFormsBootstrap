@@ -1,0 +1,73 @@
+/* Gravity Forms Bootstrap extends */
+.gform_wrapper {
+	ul {
+		.list-unstyled();
+	}
+	
+	li {
+		.form-group();
+	}
+	
+	form {
+		margin-bottom: 0;
+	}
+	
+	.gfield_required {
+		padding-left: 1px;
+		color: @state-danger-text;
+	}
+	.gfield_error {
+	
+		.gfield_label {
+			color: @state-danger-text;
+		}
+		
+		input,
+		select,
+		textarea {
+			border-color: @alert-danger-border;
+			background-color: @alert-danger-bg;
+			color: @alert-danger-text;
+			.form-control-focus(@alert-danger-text);
+		}
+	}	
+}
+
+.ginput_container {
+	input,
+	select,
+	textarea {
+		.form-control();
+	}
+	
+	input[type=checkbox] {
+		height: auto;
+		width: auto;
+		display: inline-block;
+		margin-top: -5px;
+		margin-right: 5px;
+	}
+	
+	textarea {
+		height: auto;
+	}
+}
+
+.gform_button {
+	.btn();
+	.btn-primary();
+}
+
+.validation_error {
+	.alert();
+	.alert-danger();
+}
+
+#gforms_confirmation_message {
+	.alert();
+	.alert-success();
+}
+
+.gfield_checkbox {
+	.checkbox()
+}
